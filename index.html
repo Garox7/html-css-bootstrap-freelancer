@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="bg-blue ">
-
+    <header>
         <!-- NAVBAR PRIMARIA -->
         <!-- <nav class="container-lg navbar navbar-dark navbar-expand-lg py-3">
             <div class="container-fluid">
@@ -41,22 +40,45 @@
           </nav> -->
     
         <!-- NAV BAR A LEZIONE  -->
-        <nav class="nav-top">
+        <!-- <nav class="nav-top">
             <div class="container-sm h-100 d-flex justify-content-between align-items-center text-uppercase text-light">
                 <div class="logo fw-bolder fs-5">start bootstrap</div>
-
                 <div class="btn-hamburger d-md-none">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                       </svg>
                 </div>
-
                 <ul class="list-inline d-none d-md-flex mb-0">
                     <li class="list-inline-item"><a href="#" class="link-light text-decoration-none">about</a></li>
                     <li class="list-inline-item"><a href="#" a class="link-light text-decoration-none">portfolio</a></li>
                     <li class="list-inline-item"><a href="#" a class="link-light text-decoration-none">contact</a></li>
                 </ul>
-
+            </div>
+        </nav> -->
+    
+        <!-- NAV BAR FINALE -->
+        <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark ">
+            <div class="container-fluid text-uppercase">
+                <a class="navbar-brand" href="#">start bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"   id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my_link" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my_link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my_link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -87,7 +109,7 @@
                 </div>
             </div> -->
         
-            <div class="container-sm text-center text-uppercase text-light pt-5 pb-3">
+            <div class="container-sm text-center text-uppercase text-light mt-5 pt-5 pb-3">
                 <img class="col-3 mx-auto mb-3" src="img/avatar.svg" alt="">
 
                 <h1>start bootstrap</h1>
@@ -107,7 +129,7 @@
         </section>
 
         <!-- SECOND SECTION  -->
-        <section class="bg-light py-5">
+        <section class="bg-light py-5" id="portfolio">
             <div class="container-sm">
                 <h2 class="text-center text-uppercase mb-4">portfolio</h2>
 
@@ -123,33 +145,63 @@
 
                 <class class="row g-4">
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div>
-                            <img class="img-fluid rounded" src="img/cabin.png" alt="">
+                        <div class="my_card position-relative">
+                            <img class="img-fluid rounded" src="img/cabin.png" alt="cabin">
+                            <div class="my_overlay position-absolute top-0 left-0 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-plus-circle-fill my_add-button" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div>
-                            <img class="img-fluid rounded" src="img/cake.png" alt="">
+                        <div class="my_card position-relative">
+                            <img class="img-fluid rounded" src="img/cake.png" alt="cake">
+                            <div class="my_overlay position-absolute top-0 left-0 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-plus-circle-fill my_add-button" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                  </svg>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div>
-                            <img class="img-fluid rounded" src="img/circus.png" alt="">
+                        <div class="my_card position-relative">
+                            <img class="img-fluid rounded" src="img/circus.png" alt="circus">
+                            <div class="my_overlay position-absolute top-0 left-0 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-plus-circle-fill my_add-button" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                  </svg>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div>
-                            <img class="img-fluid rounded" src="img/game.png" alt="">
+                        <div class="my_card position-relative">
+                            <img class="img-fluid rounded" src="img/game.png" alt="game">
+                            <div class="my_overlay position-absolute top-0 left-0 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-plus-circle-fill my_add-button" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                  </svg>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div>
-                            <img class="img-fluid rounded" src="img/safe.png" alt="">
+                        <div class="my_card position-relative">
+                            <img class="img-fluid rounded" src="img/safe.png" alt="safe">
+                            <div class="my_overlay position-absolute top-0 left-0 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-plus-circle-fill my_add-button" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                  </svg>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <div>
-                            <img class="img-fluid rounded" src="img/submarine.png" alt="">
+                        <div class="my_card position-relative">
+                            <img class="img-fluid rounded" src="img/submarine.png" alt="submarine">
+                            <div class="my_overlay position-absolute top-0 left-0 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-plus-circle-fill my_add-button" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                  </svg>
+                            </div>
                         </div>
                     </div>
                 </class>
@@ -157,7 +209,7 @@
         </section>
 
         <!-- THIRD SECTION -->
-        <section class="bg-acqua py-5">
+        <section class="bg-acqua py-5" id="about">
             <div class="container-sm text-center">
                 <h1 class="text-uppercase text-light mb-4">about</h1>
 
@@ -193,7 +245,7 @@
         </section>
 
         <!-- FOURTH SECTION  -->
-        <section class="bg-light py-5">
+        <section class="bg-light py-5" id="contact">
             <div class="container-sm">
                 <h1 class="text-center text-uppercase mb-4">contact me</h1>
                 <div class="row justify-content-center align-items-center mb-3">
@@ -207,22 +259,22 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-10 col-sm-8">
-                        <form class="my-form" action="" method="post">
+                        <form class="my_form" action="" method="post">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <input type="email" class="form-control my_form_control" id="exampleFormControlInput1">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                <input type="email" class="form-control my_form_control" id="exampleFormControlInput1">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                                <input type="number" class="form-control" id="exampleFormControlInput1">
+                                <input type="number" class="form-control my_form_control" id="exampleFormControlInput1">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control my_form_control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
 
                             <button type="button" class="btn btn-success bg-acqua">Send</button>
@@ -232,6 +284,7 @@
             </div>
         </section>
     </main>
+
     <footer class="bg-light-blue">
         <div class="container pt-5 pb-4">
             <div class="row justify-content-center g-4 text-center text-light">
